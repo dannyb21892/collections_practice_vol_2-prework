@@ -57,7 +57,6 @@ end
 
 def merge_data(keys, data)
   out = []
-  puts data
   i=0
   
   while i < keys.length
