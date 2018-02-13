@@ -106,6 +106,7 @@ data =     [
             }
         }
     ]
+puts data.length
 puts "data 0 is #{data[0]}"
 puts "data 1 is #{data[1]}" 
 #merge_data(keys,data)
