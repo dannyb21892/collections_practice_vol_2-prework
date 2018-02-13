@@ -67,9 +67,7 @@ def merge_data(keys, data)
     end
     
     datavals[i].each do |datum, about|
-      about.each do |stat, val|
-        out[i][stat] = val
-      end
+      out[i][datum] = about
     end
     i += 1
   end
