@@ -93,7 +93,17 @@ def organize_schools(schools)
       locations << location
     end
   end
-  locations.each do |name|
-    out[name] = []
+  while locations.length > 0
+    out[locations[0]] = []
     locations.delete(name)
+    
+    schools.each do |name, hash|
+    hash.each do |key, location|
+      if location == locations[0]
+        out[locations[0]] << name
+      end
+    end
+  end
+  end
+  
 end
