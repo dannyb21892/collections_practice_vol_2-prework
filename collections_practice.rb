@@ -86,30 +86,3 @@ end
 
 def organize_schools(schools)
 end
-
-keys =     [
-           {
-            :first_name => "blake"
-        },
-           {
-            :first_name => "ashley"
-        }
-    ]
-data =     [
-           {
-             "blake" => {
-                :awesomeness => 10,
-                     :height => "74",
-                  :last_name => "johnson"
-            },
-            "ashley" => {
-                :awesomeness => 9,
-                     :height => 60,
-                  :last_name => "dubs"
-            }
-        }
-    ]
-puts data.length
-puts "data 0 is #{data[0]}"
-puts "data 1 is #{data[1]}" 
-#merge_data(keys,data)
