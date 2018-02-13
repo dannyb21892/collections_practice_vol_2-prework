@@ -41,7 +41,7 @@ def count_elements(array)
   temp = array
   out = []
   index = 0
-  fuckyou temp.size
+  fuckyou = temp.size
   while fuckyou > 0 do
     out << {}
     found = temp.find_all {|i| i == temp[0] }
