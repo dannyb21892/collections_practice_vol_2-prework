@@ -94,4 +94,6 @@ def organize_schools(schools)
     end
   end
   locations.each do |name|
+    out[name] = []
+    locations.delete(name)
 end
