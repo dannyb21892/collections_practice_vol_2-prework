@@ -66,7 +66,7 @@ def merge_data(keys, data)
       out[i][title] = name
     end
     
-    data[i].each do |datum, about|
+    datavals[i].each do |datum, about|
       about.each do |stat, val|
         out[i][stat] = val
       end
