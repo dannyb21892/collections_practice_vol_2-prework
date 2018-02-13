@@ -41,6 +41,7 @@ def count_elements(array)
   temp = array
   out = []
   index = 0
+  puts temp
   while temp.length > 0
     out << {}
     size = temp.find_all {|i| i == temp[0] }
@@ -81,4 +82,4 @@ end
 def organize_schools(schools)
 end
 
-#count_elements([{:name => "blake"}, {:name => "blake"}, {:name => "ashley"}])
+count_elements([{:name => "blake"}, {:name => "blake"}, {:name => "ashley"}])
