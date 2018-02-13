@@ -50,6 +50,7 @@ def count_elements(array)
       array = []
     else
       array = array.delete(temp[0])
+      puts array
     end
     index += 1
   end
