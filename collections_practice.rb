@@ -39,6 +39,9 @@ end
 
 def count_elements(array)
   temp = array
+  if temp == nil
+    temp = []
+  end
   out = []
   index = 0
   while temp.size > 0
