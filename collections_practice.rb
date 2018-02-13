@@ -49,7 +49,7 @@ def count_elements(array)
     if found.size == array.size
       array = []
     else
-      array = array.delete(array[0])
+      array.delete(array[0])
       puts array
     end
     index += 1
