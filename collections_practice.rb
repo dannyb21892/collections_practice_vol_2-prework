@@ -82,4 +82,11 @@ end
 def organize_schools(schools)
 end
 
-count_elements([{:name => "blake"}, {:name => "blake"}, {:name => "ashley"}])
+keys =     [
+           {
+            :first_name => "blake"
+        },
+           {
+            :first_name => "ashley"
+        }
+    ]
