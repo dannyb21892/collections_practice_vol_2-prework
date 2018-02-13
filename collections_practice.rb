@@ -44,13 +44,13 @@ def count_elements(array)
   while temp.length > 0
     out << {}
     size = temp.find_all {|i| i == temp[0] }
-    puts size
     out[index][:count] = size.length
     if size.length == temp.length
       temp = []
     else
       temp = temp.delete(temp[0])
     end
+    index += 1
   end
 end
 
