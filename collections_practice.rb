@@ -43,7 +43,7 @@ def count_elements(array)
   index = 0
   while temp.length > 0
     out << {}
-    size = temp.find_all(temp[0])
+    size = temp.find_all {|i|  }
     out[index][:count] = size.length
     temp = temp.delete(element)
   end
