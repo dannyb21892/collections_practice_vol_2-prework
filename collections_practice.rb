@@ -44,6 +44,7 @@ def count_elements(array)
     out << {}
     found = array.find_all {|i| i == array[0] }
     out[index][:count] = found.size
+    out[index][array[0].keys[0]] = array[0].values[0]
     if found.size == array.size
       array = []
     else
@@ -51,6 +52,7 @@ def count_elements(array)
     end
     index += 1
   end
+  out
 end
 
 def merge_data(keys, data)
