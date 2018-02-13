@@ -38,12 +38,13 @@ def remove_non_strings(array)
 end
 
 def count_elements(array)
-  temp = array
   out = []
   index = 0
-  while array.size > 0 do
+  puts array.size
+  while array.size > 0
     out << {}
     found = array.find_all {|i| i == array[0] }
+    puts found
     out[index][:count] = found.size
     if found.size == array.size
       array = []
