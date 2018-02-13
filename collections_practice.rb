@@ -68,6 +68,7 @@ def merge_data(keys, data)
     
     puts data[i]
     data[i].each do |datum, about|
+      puts check
       about.each do |stat, val|
         out[i][stat] = val
       end
