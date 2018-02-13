@@ -42,6 +42,7 @@ def count_elements(array)
   if temp == nil
     temp = []
   end
+  puts temp.size
   out = []
   index = 0
   while temp.size > 0
