@@ -77,4 +77,4 @@ end
 def organize_schools(schools)
 end
 
-count_elements([{:name => "blake"}, {:name => "blake"}, {:name => "ashley"}])).to eq([{:name => "blake", :count => 2}, {:name => "ashley", :count => 1}])
+count_elements([{:name => "blake"}, {:name => "blake"}, {:name => "ashley"}])
