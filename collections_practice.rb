@@ -43,9 +43,9 @@ def count_elements(array)
   index = 0
   while temp.size > 0
     out << {}
-    size = temp.find_all {|i| i == temp[0] }
-    out[index][:count] = size.size
-    if size.size == temp.size
+    found = temp.find_all {|i| i == temp[0] }
+    out[index][:count] = found.size
+    if found.size == temp.size
       temp = []
     else
       temp = temp.delete(temp[0])
