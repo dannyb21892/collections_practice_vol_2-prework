@@ -98,12 +98,12 @@ def organize_schools(schools)
     locations.delete(name)
     
     schools.each do |name, hash|
-    hash.each do |key, location|
-      if location == locations[0]
-        out[locations[0]] << name
+      hash.each do |key, location|
+        if location == locations[0]
+          out[locations[0]] << name
+        end
       end
     end
   end
-  end
-  
+  out
 end
