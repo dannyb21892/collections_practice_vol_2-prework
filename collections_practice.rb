@@ -58,7 +58,8 @@ end
 def merge_data(keys, data)
   out = []
   i=0
-  puts data[1]
+  puts "data 0 is #{data[0]}"
+  puts "data 1 is #{data[1]}"
   while i < keys.length
     out << {}
     
