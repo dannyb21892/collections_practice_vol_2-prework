@@ -58,8 +58,7 @@ end
 def merge_data(keys, data)
   out = []
   i=0
-  puts "data 0 is #{data[0]}"
-  puts "data 1 is #{data[1]}"
+  datavals = data[0].values
   while i < keys.length
     out << {}
     
@@ -67,9 +66,7 @@ def merge_data(keys, data)
       out[i][title] = name
     end
     
-    puts "#{i}"
     data[i].each do |datum, about|
-      puts "check"
       about.each do |stat, val|
         out[i][stat] = val
       end
